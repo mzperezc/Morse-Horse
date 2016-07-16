@@ -1,0 +1,35 @@
+print("Greetings and welcome to the Morse Horse!")
+question=input("Do you wish to translate to english or morse?:")
+if question=="morse":
+    output= str()
+    word=input("Please enter your word: ")
+    list(word)
+    for ch in word:
+        m_code= { 'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 
+         'e': '.', 'f': '..-.', 'g':'--.', 'h': '....', 
+         'i': '..', 'j': '.---', 'k': '-.-', 'l': '.-..', 
+         'm':'--', 'n': '-.', 'o':'---', 'p': '.--.', 
+         'q': '--.-', 'r': '.-.', 's': '...', 't': '-',
+         'u':  '..-', 'v': '...-', 'w': '.--', 'x': '-..-',
+         'y': '-.--', 'z': '--..', '0': '-----',  '1': '.----',  '2': '..---',
+        '3': '...--',  '4': '....-',  '5': '.....',
+        '6': '-....',  '7': '--...',  '8': '---..',
+        '9': '----.' }
+        word=  m_code[ch]
+        output=output + " " + word
+    print(output)
+elif question== "english":
+    output=str()
+    m_word=input(" Enter morse code: ")
+    w=m_word.split()
+    for ch in w:
+        morse_c= {'.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd','.': 'e', '..-.': 'f', '--.': 'g','....': 'h',
+              '..':'i', '.---': 'j', '-.-': 'k','.-..': 'l','--': 'm','-.': 'n','---': 'o', '.--.': 'p','--.-': 'q','.-.': 'r',
+              '...': 's','-': 't', '..-': 'u','...-': 'v','.--': 'w','-..-': 'x','-.--': 'y', '--..': 'z'}
+        letter= morse_c[ch]
+        output= output + "" + letter
+    print(output)
+
+else:
+    print("Invalid. Please try again")
+        
