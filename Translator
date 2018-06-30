@@ -1,5 +1,5 @@
 print("Greetings and welcome to the Morse Horse!")
-question=input("Do you wish to translate to english or morse?:")
+question=input("Do you wish to translate to english or morse, biotch?:")
 if question=="morse":
     output= str()
     word=input("Please enter your word: ")
